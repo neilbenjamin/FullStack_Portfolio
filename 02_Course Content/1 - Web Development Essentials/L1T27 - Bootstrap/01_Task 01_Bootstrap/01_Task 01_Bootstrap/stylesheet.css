@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(233, 233, 233);
+}
+.flex-column {
+  margin-bottom: 2%;
+}
+
+.navbar {
+  margin-bottom: 5%;
+  padding: 2%;
+}
+
+.nav-image {
+  display: inline-block;
+  width: 5%;
+  height: 5%;
+  margin-right: 5%;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.btn {
+  justify-content: center;
+}
+
+.footer {
+  margin-top: 5%;
+  padding: 2%;
+  background-color: rgb(44, 44, 44);
+}
+.main {
+  padding: 12%;
+}
+.label-custom {
+  color: white;
+}
+

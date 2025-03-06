@@ -1,0 +1,619 @@
+/* Mobile Styles */
+/* Setting the styilng for devices when the breakpoint viewport of 768px is reached and smaller. */
+.mobileOnly img {
+  /* Display the image on mobile. Display Block takes up the entire container. */
+  display: block;
+  /* This fills the image 100% of the size of the container. */
+  max-width: 100%;
+  /* Maintain aspect ratio */
+  height: auto;
+  /* Only displays items selected for the sub minimum breakpoint setting and hides anything
+    bigger than 768px. */
+}
+.container {
+  display: none;
+}
+
+/* Media Query conatinign all the styling elements for vieports larger 768px. */
+@media screen and (min-width: 768px) {
+  /* Class selector used to style the contents of the HTML container */
+  .container {
+    /* Grid display method */
+    display: grid;
+    /* Gap of 1px */
+    gap: 1px;
+    /* Automatically resize column to fit the size of the content. */
+    grid-template-columns: auto;
+    /* Automatically resize row to fit the size of the content. */
+    grid-template-rows: auto;
+  }
+  /* Main Header Title */
+  .mainHeader {
+    /* Spans across teh entire length of the chosen individual columns from1 to 19*/
+    grid-column: 1/19;
+    /* First Row */
+    grid-row: 1;
+    /* Text color */
+    color: rgb(25, 25, 128);
+    /* Centered between 1 & 19 */
+    text-align: center;
+    /* Pushed it down a little */
+    margin-bottom: -5%;
+    /* Responsive Text to fit vp width */
+    font-size: 1.2vw;
+  }
+  /* ROW 2 */
+  /* Individual Grid Styling Elements to position each IMG correctly */
+  .Hydrogen {
+    /* Starts at position 1 on teh row and ends at position 2. Use the developers tools to 
+        check the grid lines. */
+    grid-column: 1/2;
+    /* Starts on row 2 */
+    grid-row: 2;
+  }
+  .blank {
+    grid-column: span 1;
+    grid-row: 2;
+  }
+  .Helium {
+    grid-column: 18/19;
+    grid-row: 2;
+  }
+  /* ROW 3 */
+  .Lithium {
+    grid-column: 1/2;
+    grid-row: 3;
+  }
+  .Beryllium {
+    grid-column: 2/3;
+    grid-row: 3;
+  }
+  .blank1 {
+    grid-column: span 1;
+    grid-row: 3;
+  }
+  .Boron {
+    grid-column: 13/14;
+    grid-row: 3;
+  }
+  .Carbon {
+    grid-column: 14/15;
+    grid-row: 3;
+  }
+  .Nitrogen {
+    grid-column: 15/16;
+    grid-row: 3;
+  }
+  .Oxygen {
+    grid-column: 16/17;
+    grid-row: 3;
+  }
+  .Fluorine {
+    grid-column: 17/18;
+    grid-row: 3;
+  }
+  .Neon {
+    grid-column: 18/19;
+    grid-row: 3;
+  }
+  /* Row 4 */
+  .Sodium {
+    grid-column: 1/2;
+    grid-row: 4;
+  }
+  .Magnesium {
+    grid-column: 2/3;
+    grid-row: 4;
+  }
+  .Aluminum {
+    grid-column: 13/14;
+    grid-row: 4;
+  }
+  .Silicon {
+    grid-column: 14/15;
+    grid-row: 4;
+  }
+  .Phosphorus {
+    grid-column: 15/16;
+    grid-row: 4;
+  }
+  .Sulfur {
+    grid-column: 16/17;
+    grid-row: 4;
+  }
+  .Chlorine {
+    grid-column: 17/18;
+    grid-row: 4;
+  }
+  .Argon {
+    grid-column: 18/19;
+    grid-row: 4;
+  }
+  /* Row 5 */
+  .Potassium {
+    grid-column: 1/2;
+    grid-row: 5;
+  }
+  .Calcium {
+    grid-column: 2/3;
+    grid-row: 5;
+  }
+  .Scandium {
+    grid-column: 3/4;
+    grid-row: 5;
+  }
+  .Titanium {
+    grid-column: 4/5;
+    grid-row: 5;
+  }
+  .Vanadium {
+    grid-column: 5/6;
+    grid-row: 5;
+  }
+  .Chromium {
+    grid-column: 6/7;
+    grid-row: 5;
+  }
+  .Manganese {
+    grid-column: 7/8;
+    grid-row: 5;
+  }
+  .Iron {
+    grid-column: 8/9;
+    grid-row: 5;
+  }
+  .Cobalt {
+    grid-column: 9/10;
+    grid-row: 5;
+  }
+  .Nickel {
+    grid-column: 10/11;
+    grid-row: 5;
+  }
+  .Copper {
+    grid-column: 11/12;
+    grid-row: 5;
+  }
+  .Zinc {
+    grid-column: 12/13;
+    grid-row: 5;
+  }
+  .Gallium {
+    grid-column: 13/14;
+    grid-row: 5;
+  }
+  .Germanium {
+    grid-column: 14/15;
+    grid-row: 5;
+  }
+  .Arsenic {
+    grid-column: 15/16;
+    grid-row: 5;
+  }
+  .Selenium {
+    grid-column: 16/17;
+    grid-row: 5;
+  }
+  .Bromine {
+    grid-column: 17/18;
+    grid-row: 5;
+  }
+  .Krypton {
+    grid-column: 18/19;
+    grid-row: 5;
+  }
+  /* Row 6 */
+  .Rubidium {
+    grid-column: 1/2;
+    grid-row: 6;
+  }
+  .Strontium {
+    grid-column: 2/3;
+    grid-row: 6;
+  }
+  .Yttrium {
+    grid-column: 3/4;
+    grid-row: 6;
+  }
+  .Zirconium {
+    grid-column: 4/5;
+    grid-row: 6;
+  }
+  .Niobium {
+    grid-column: 5/6;
+    grid-row: 6;
+  }
+  .Molybdenum {
+    grid-column: 6/7;
+    grid-row: 6;
+  }
+  .Technetium {
+    grid-column: 7/8;
+    grid-row: 6;
+  }
+  .Ruthenium {
+    grid-column: 8/9;
+    grid-row: 6;
+  }
+  .Rhodium {
+    grid-column: 9/10;
+    grid-row: 6;
+  }
+  .Palladium {
+    grid-column: 10/11;
+    grid-row: 6;
+  }
+  .Silver {
+    grid-column: 11/12;
+    grid-row: 6;
+  }
+  .Cadmium {
+    grid-column: 12/13;
+    grid-row: 6;
+  }
+  .Indium {
+    grid-column: 13/14;
+    grid-row: 6;
+  }
+  .Tin {
+    grid-column: 14/15;
+    grid-row: 6;
+  }
+  .Antimony {
+    grid-column: 15/16;
+    grid-row: 6;
+  }
+  .Tellurium {
+    grid-column: 16/17;
+    grid-row: 6;
+  }
+  .Iodine {
+    grid-column: 17/18;
+    grid-row: 6;
+  }
+  .Xenon {
+    grid-column: 18/19;
+    grid-row: 6;
+  }
+  /* Row 7 */
+  .Cesium {
+    grid-column: 1/2;
+    grid-row: 7;
+  }
+  .Barium {
+    grid-column: 2/3;
+    grid-row: 7;
+  }
+  .blockExtension1 {
+    grid-column: 3/4;
+    grid-row: 7;
+  }
+  .Hafnium {
+    grid-column: 4/5;
+    grid-row: 7;
+  }
+  .Tantalum {
+    grid-column: 5/6;
+    grid-row: 7;
+  }
+  .Tungsten {
+    grid-column: 6/7;
+    grid-row: 7;
+  }
+  .Rhenium {
+    grid-column: 7/8;
+    grid-row: 7;
+  }
+  .Osmium {
+    grid-column: 8/9;
+    grid-row: 7;
+  }
+  .Iridium {
+    grid-column: 9/10;
+    grid-row: 7;
+  }
+  .Platinum {
+    grid-column: 10/11;
+    grid-row: 7;
+  }
+  .Gold {
+    grid-column: 11/12;
+    grid-row: 7;
+  }
+  .Mercury {
+    grid-column: 12/13;
+    grid-row: 7;
+  }
+  .Thallium {
+    grid-column: 13/14;
+    grid-row: 7;
+  }
+  .Lead {
+    grid-column: 14/15;
+    grid-row: 7;
+  }
+  .Bismuth {
+    grid-column: 15/16;
+    grid-row: 7;
+  }
+  .Polonium {
+    grid-column: 16/17;
+    grid-row: 7;
+  }
+  .Astatine {
+    grid-column: 17/18;
+    grid-row: 7;
+  }
+  .Radon {
+    grid-column: 18/19;
+    grid-row: 7;
+  }
+  /* Row 8 */
+  .Francium {
+    grid-column: 1/2;
+    grid-row: 8;
+  }
+  .Radium {
+    grid-column: 2/3;
+    grid-row: 8;
+  }
+  .blockExtension2 {
+    grid-column: 3/4;
+    grid-row: 8;
+  }
+  .Rutherfordium {
+    grid-column: 4/5;
+    grid-row: 8;
+  }
+  .Dubnium {
+    grid-column: 5/6;
+    grid-row: 8;
+  }
+  .Seaborgium {
+    grid-column: 6/7;
+    grid-row: 8;
+  }
+  .Bohrium {
+    grid-column: 7/8;
+    grid-row: 8;
+  }
+  .Hassium {
+    grid-column: 8/9;
+    grid-row: 8;
+  }
+  .Meitnerium {
+    grid-column: 9/10;
+    grid-row: 8;
+  }
+  .Darmstadtium {
+    grid-column: 10/11;
+    grid-row: 8;
+  }
+  .Roentgenium {
+    grid-column: 11/12;
+    grid-row: 8;
+  }
+  .Copernicium {
+    grid-column: 12/13;
+    grid-row: 8;
+  }
+  .Nihonium {
+    grid-column: 13/14;
+    grid-row: 8;
+  }
+  .Flerovium {
+    grid-column: 14/15;
+    grid-row: 8;
+  }
+  .Moscovium {
+    grid-column: 15/16;
+    grid-row: 8;
+  }
+  .Livermorium {
+    grid-column: 16/17;
+    grid-row: 8;
+  }
+  .Tennessine {
+    grid-column: 17/18;
+    grid-row: 8;
+  }
+  .Oganesson {
+    grid-column: 18/19;
+    grid-row: 8;
+  }
+  /* Row 9 */
+  .Lanthanum {
+    grid-column: 3/4;
+    grid-row: 9;
+  }
+  .Cerium {
+    grid-column: 4/5;
+    grid-row: 9;
+  }
+  .Praseodymium {
+    grid-column: 5/6;
+    grid-row: 9;
+  }
+  .Neodymium {
+    grid-column: 6/7;
+    grid-row: 9;
+  }
+  .Promethium {
+    grid-column: 7/8;
+    grid-row: 9;
+  }
+  .Samarium {
+    grid-column: 8/9;
+    grid-row: 9;
+  }
+  .Europium {
+    grid-column: 9/10;
+    grid-row: 9;
+  }
+  .Gadolinium {
+    grid-column: 10/11;
+    grid-row: 9;
+  }
+  .Terbium {
+    grid-column: 11/12;
+    grid-row: 9;
+  }
+  .Dysprosium {
+    grid-column: 12/13;
+    grid-row: 9;
+  }
+  .Holmium {
+    grid-column: 13/14;
+    grid-row: 9;
+  }
+  .Erbium {
+    grid-column: 14/15;
+    grid-row: 9;
+  }
+  .Thulium {
+    grid-column: 15/16;
+    grid-row: 9;
+  }
+  .Ytterbium {
+    grid-column: 16/17;
+    grid-row: 9;
+  }
+  .Lutetium {
+    grid-column: 17/18;
+    grid-row: 9;
+  }
+  /* Row 10 */
+  .Actinium {
+    grid-column: 3/4;
+    grid-row: 10;
+  }
+  .Thorium {
+    grid-column: 4/5;
+    grid-row: 10;
+  }
+  .Protactinium {
+    grid-column: 5/6;
+    grid-row: 10;
+  }
+  .Uranium {
+    grid-column: 6/7;
+    grid-row: 10;
+  }
+  .Neptunium {
+    grid-column: 7/8;
+    grid-row: 10;
+  }
+  .Plutonium {
+    grid-column: 8/9;
+    grid-row: 10;
+  }
+  .Americium {
+    grid-column: 9/10;
+    grid-row: 10;
+  }
+  .Curium {
+    grid-column: 10/11;
+    grid-row: 10;
+  }
+  .Berkelium {
+    grid-column: 11/12;
+    grid-row: 10;
+  }
+  .Californium {
+    grid-column: 12/13;
+    grid-row: 10;
+  }
+  .Einsteinium {
+    grid-column: 13/14;
+    grid-row: 10;
+  }
+  .Fermium {
+    grid-column: 14/15;
+    grid-row: 10;
+  }
+  .Mendelevium {
+    grid-column: 15/16;
+    grid-row: 10;
+  }
+  .Nobelium {
+    grid-column: 16/17;
+    grid-row: 10;
+  }
+  .Lawrencium {
+    grid-column: 17/18;
+    grid-row: 10;
+  }
+  /* Row 11 */
+  .Alkali {
+    grid-column: 5/6;
+    grid-row: 11;
+  }
+  .AlkalineEarth {
+    grid-column: 6/7;
+    grid-row: 11;
+  }
+  .TransitionMetal {
+    grid-column: 7/8;
+    grid-row: 11;
+  }
+  .BasicMetal {
+    grid-column: 8/9;
+    grid-row: 11;
+  }
+  .SemiMetal {
+    grid-column: 9/10;
+    grid-row: 11;
+  }
+  .Nonmetal {
+    grid-column: 10/11;
+    grid-row: 11;
+  }
+  .Halogen {
+    grid-column: 11/12;
+    grid-row: 11;
+  }
+  .NobleGas {
+    grid-column: 12/13;
+    grid-row: 11;
+  }
+  .Lanthanide {
+    grid-column: 13/14;
+    grid-row: 11;
+  }
+  .Actinide {
+    grid-column: 14/15;
+    grid-row: 11;
+  }
+  .LanthanideSeries {
+    grid-column: 1/3;
+    grid-row: 9;
+  }
+  .ActinideSeries {
+    grid-column: 1/3;
+    grid-row: 10;
+  }
+  /* Responsive IMG styling. I set it to 85% to make the images a little smaller to accomodate
+      all the cells on a viewport */
+  img {
+    width: 85%;
+    height: auto;
+  }
+
+  .element {
+    /* Styling the individual elements with Grid Display, centered and pointer mouse style and 
+        a shadow transition to make it pop a little. Leanrt this from a previous CSS course. */
+    display: grid;
+    place-items: center;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .element:hover {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+      inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  }
+  /* Keep the mobile styling hidden for larger devices. */
+  .mobileOnly {
+    display: none;
+  }
+}

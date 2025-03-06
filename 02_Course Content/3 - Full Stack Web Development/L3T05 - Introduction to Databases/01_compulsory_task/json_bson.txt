@@ -1,0 +1,28 @@
+Primary differences between JSON and BSON is that BSON reads and stores binary data wheres JDON stores text.
+
+Here's a more details breakdown courtesy of openAi.:
+
+Binary vs. Textual Format:
+
+JSON: JSON is a textual format, which means it represents data as human-readable text using a combination of characters (e.g., letters, numbers, and symbols).
+BSON: BSON is a binary format, which means it represents data as binary data with a more compact and efficient encoding. BSON is designed for efficient data storage and transmission, making it more space-efficient and faster to encode and decode compared to JSON.
+Data Types:
+
+JSON: JSON has a limited set of data types, including strings, numbers, booleans, arrays, objects, null, and nested structures.
+BSON: BSON extends the set of data types beyond what JSON offers. It includes additional types such as binary data, date-time, regular expressions, and more. These extra data types provide more flexibility in representing different kinds of data.
+Support for Binary Data:
+
+JSON: JSON is a text-based format, and while it can represent binary data using base64 encoding, this can increase the size of the data and decrease efficiency.
+BSON: BSON natively supports binary data types, making it well-suited for applications that need to work with binary data efficiently, such as databases and file storage systems.
+Efficiency and Size:
+
+JSON: JSON is more human-readable and is often used for data interchange between systems. However, it tends to be less space-efficient due to its textual representation, which can result in larger file sizes.
+BSON: BSON is more compact and efficient in terms of both storage and data transmission due to its binary encoding. This makes it faster to serialize and deserialize, especially for large datasets.
+Endianness:
+
+JSON: JSON is endianness-agnostic since it is a textual format.
+BSON: BSON specifies a particular endianness (little-endian) for its binary data, which can be important for cross-platform compatibility in some cases.
+Schema vs. Schemaless:
+
+JSON: JSON is schemaless, which means you can create JSON documents without specifying a strict schema in advance. This flexibility can be advantageous in various scenarios.
+BSON: BSON can be used in both schemaless and schema-enforced contexts. Some databases and systems use BSON with a predefined schema for efficient data storage and retrieval.

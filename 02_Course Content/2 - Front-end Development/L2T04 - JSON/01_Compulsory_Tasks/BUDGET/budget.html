@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="loadExistingData()">
+    <!-- Income Form -->
+    <div class="income-form-container">
+        <form>
+            <h3>INCOME</h3>
+            <!-- Income Source -->
+            <div class="income-source">
+                <label for="incomeSource">Income Source:</label><br>
+                <input type="text" name="incomeSource" id="incomeSource" required><br>
+            </div>
+            <!-- Income Amount -->
+            <div class="income-amount">
+                <label for="incomeAmount">Income Amount:</label><br>
+                <input type="number" name="incomeAmount" id="incomeAmount" required><br>
+            </div>
+            <!-- Recurring Y/N -->
+            <div class="recurring-income">
+                <label for="recurringIncome">Recurring Income:</label><br>
+                <select name="recurringIncome" id="recurringIncome" required>
+                    <option value="">Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br>
+            </div>
+        </form>
+        <!-- Submit Fnc Btn -->
+        <button onclick="addIncomeData()" id="prompt-box">SUBMIT</button>
+    </div>
+    <!-- Display Income List -->
+    <div>
+        <ul id="incomeList"></ul>
+    </div>
+
+    <!-- Expense Form -->
+    <div class="expense-form-container">
+        <form>
+            <h3>EXPENSES</h3>
+            <!-- Expense Item -->
+            <div class="expense-item">
+                <label for="expenseItem">Expense Item:</label><br>
+                <input type="text" name="expenseItem" id="expenseItem" required><br>
+            </div>
+            <!-- Expense Amount -->
+            <div class="expense-amount">
+                <label for="expenseAmount">Expense Amount:</label><br>
+                <input type="number" name="expenseAmount" id="expenseAmount" required><br>
+            </div>
+            <!-- Recurring Y/N -->
+            <div class="recurring-expense">
+                <label for="recurringExpense">Recurring Income:</label><br>
+                <select name="recurringExpense" id="recurringExpense" required>
+                    <option value="">Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br>
+            </div>
+        </form>
+    </div>
+
+    <div>
+
+        <!-- Submit Fnc Btn -->
+        <button onclick="addExpenseData()" id="prompt-box">SUBMIT</button>
+    </div>
+
+    <!-- Display Expense List -->
+    <div>
+        <ul id="expenseList"></ul>
+    </div>
+
+    <!-- Display Disposable Income -->
+    <div id="display-disposable-income">
+        <h4>DISPOSABLE INCOME</h4>
+        <div id="disposableIncome"></div>
+    </div>
+
+    <div>
+        <label for="savingsAmount">Enter Savings Amount:</label><br>
+        <input type="number" id="savingsAmount">
+        <button onclick="calculateWithSavings()">Calculate Savings</button>
+    </div>
+
+    <!-- Display Total Expense -->
+    <div id="display-savings">
+        <h4>SAVINGS TOTAL</h4>
+        <div id="savings"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

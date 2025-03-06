@@ -1,0 +1,6 @@
+Prompt user to enter an integer.
+Assign user's input to a new variable called n.
+Create a new variable, a, which stores a collection of prime numbers.
+Compare the user input variable n to the new variable a;
+If there is a match between n and a, then ouput the string "Prime" to the console;
+else output "Not Prime" to the console.

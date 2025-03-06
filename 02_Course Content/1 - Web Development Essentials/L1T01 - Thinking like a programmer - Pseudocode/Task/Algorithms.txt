@@ -1,0 +1,12 @@
+Task 2
+
+Scenario 1
+Create a function that prompts the user to enter their name. Assign the name (data entered) to a new variable called firstName.
+Once that is complete, print "Hello " + the variable firstName to the console. 
+
+Scenario 2
+Once scenari 1 is complete, then prompt the user to enter their age. Assign their answer to a new variable called age.
+Then determine the user's year of birth by subtracting their answer from the current year eg. 
+user age = 38 && the current year is 2023, means 2023 - 38 = 1985.  Create a new variable called yearBorn 
+and assign the result of user age - current year to the new variable, yearBorn.
+Then print the following data to the console: "Based on your age of " + age (user initial input variable) + ", it looks like you were born in the year " + yearBorn (new variable we created to store the result of user age - current year to determine year born) + "." So in this instance the print would read "IBased on your age of 38, it looks like you were born in the year 1985." 

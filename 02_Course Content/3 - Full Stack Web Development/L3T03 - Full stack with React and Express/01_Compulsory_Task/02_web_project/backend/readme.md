@@ -1,0 +1,5 @@
+Instructions for usiung the the fullstack app
+
+1. Navigate to backend project (backend) root directory, open terminal and type "npm install" to install depencies. Once installed, enter npm start, and wait for the express server to launch or, navigate to http://http://localhost:8080/api/ in the browser.
+2. Navigate to frontend project (fullstack_frontend) root directory. Inside the package.json file, copy and then delete the "proxy": "http://localhost:8080" property inside the dependency object. Once this is done, type "npm install" to install node module depencies. Once node modules are installed, replace the proxy server propery you just deleted. Once done, enter npm start, and wait for the react server to launch or, navigate to http://http://localhost:3000 in the browser to begin using the app.
+3. The app will load with 2 web projects and give the user the option to add, delete, or update using the express server as the main server.

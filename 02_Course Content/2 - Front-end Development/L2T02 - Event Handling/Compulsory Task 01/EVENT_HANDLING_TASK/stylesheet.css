@@ -1,0 +1,14 @@
+#clickedItemsDisplay {
+    color: rgb(31, 188, 255);
+    font-size: .9rem;
+}
+
+.checked {
+    color: rgb(31, 188, 255);
+    font-size: 1.9rem;
+    display: block;
+    cursor: pointer;
+}
+ul li {
+    cursor: pointer;
+}

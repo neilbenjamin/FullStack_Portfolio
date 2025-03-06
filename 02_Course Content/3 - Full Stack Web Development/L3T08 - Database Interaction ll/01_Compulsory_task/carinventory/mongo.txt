@@ -1,0 +1,143 @@
+layout options::
+
+- your_project/
+  - models/
+    - car.js
+    - user.js
+    - other_models.js
+  - routes/
+    - api.js
+  - controllers/
+    - carController.js
+    - userController.js
+    - other_controllers.js
+  - server.js
+  - config.js
+  - package.json
+
+schema:
+
+const mongoose = require('mongoose');
+
+const carSchema = new mongoose.Schema({
+  make: String,
+  model: String,
+  year: Number,
+});
+
+const Car = mongoose.model('Car', carSchema);
+module.exports = Car;
+
+Import into server.js
+const express = require('express');
+const mongoose = require('mongoose');
+const Car = require('./models/car'); // Import your model
+
+const app = express();
+
+// Database connection setup
+mongoose.connect('mongodb://localhost:27017/your-database', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+// ...
+
+// Example route to create a new car document
+app.post('/api/cars', async (req, res) => {
+  try {
+    const { make, model, year } = req.body;
+    
+    // Create a new car document using the Car model
+    const newCar = new Car({ make, model, year });
+
+    // Save the new car document to the database
+    await newCar.save();
+
+    res.status(201).json({ message: 'Car created successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// ...
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
+});
+
+connect to mongo: 
+
+current mongo schema: 
+
+ _id: ObjectId("6537a6720bb87af7c53f263f"),
+    Model: '2009',
+    Make: 'Volkswagen Polo',
+    Owner: 'John Smith',
+    Registration: 'CY 7441',
+    Address: '15 Houtkapper Street, Bellville'
+
+    CONTROLLER CRUD :
+
+    const Car = require('../models/car'); // Import your Car model
+
+// Create a new car
+exports.createCar = async (req, res) => {
+  try {
+    // Create a new car based on the request body
+    const newCar = new Car(req.body);
+    await newCar.save();
+
+    res.status(201).json(newCar);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+};
+
+// Get all cars
+exports.getAllCars = async (req, res) => {
+  try {
+    const cars = await Car.find();
+    res.status(200).json(cars);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+};
+
+// Update a car by ID
+exports.updateCar = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const updatedCar = await Car.findByIdAndUpdate(id, req.body, { new: true });
+
+    if (!updatedCar) {
+      return res.status(404).json({ error: 'Car not found' });
+    }
+
+    res.status(200).json(updatedCar);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+};
+
+// Delete a car by ID
+exports.deleteCar = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deletedCar = await Car.findByIdAndRemove(id);
+
+    if (!deletedCar) {
+      return res.status(404).json({ error: 'Car not found' });
+    }
+
+    res.status(204).send();
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+};

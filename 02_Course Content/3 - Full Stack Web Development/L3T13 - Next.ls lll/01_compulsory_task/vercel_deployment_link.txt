@@ -1,0 +1,1 @@
+I accidentally hardcoded the first route. I fixed the error, should work fine now - Please visit https://dynamic-routes-pqj2.vercel.app/ for the updated app.
