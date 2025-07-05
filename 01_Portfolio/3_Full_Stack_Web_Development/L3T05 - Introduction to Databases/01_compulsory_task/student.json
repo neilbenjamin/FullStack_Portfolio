@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "name": "Mary Poppins",
+      "date_of_birth": "27-04-1981", 
+      "address": {
+        "street": "No 1 Umbrella Lane",
+        "city": "London",
+        "postal_code": "9876" 
+      },
+      "courses": [
+        {
+          "course_name": "Web Development", 
+          "course_id": "WD_01",
+          "commence_date": "05-05-2023", 
+          "completion_date": "07-11-2023" 
+        }
+      ],
+      "course_payment": {
+        "once_off": ["cash", "EFT", "Credit-Card", "bitcoin"],  
+        "monthly": ["cash", "EFT", "Credit-Card", "bitcoin"] 
+      },
+      "contact_details": {
+        "phone": "+27 675-9876",
+        "mobile": "+27 74 564 8764",
+        "email": "mary@poppins.co.za",
+        "alt_email": "mary@pop.co.za",  
+        "emergency_contact": {
+          "mother_cel": "+27 72 876 5746",
+          "father_cel": "+27 72 354 8749"
+        }
+      }
+    }
+  ]
+  

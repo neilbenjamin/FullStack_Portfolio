@@ -1,0 +1,2 @@
+Please npm install for node modules and then open postman to verify each  user's tokens against the various endpoints and the 
+permisisons set thereof. 

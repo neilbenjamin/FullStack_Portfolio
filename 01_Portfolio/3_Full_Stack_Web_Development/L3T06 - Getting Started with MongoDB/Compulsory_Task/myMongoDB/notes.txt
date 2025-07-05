@@ -1,0 +1,3 @@
+I have many documents in the test database so I didn't want to delete it and create it again. 
+Hopefully you're able to see that the database is infact created and in use by the screen shot
+labelled "04_test_Data base already created."

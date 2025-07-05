@@ -1,0 +1,1 @@
+I created two fetch exmaples. the fetch.zip is using the older deprecated code and the dynamic.routes is using the latest next.js 13

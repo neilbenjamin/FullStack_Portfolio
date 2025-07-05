@@ -1,0 +1,84 @@
+(Please lnote the link provided is brokem so I have referenced the vidoe link provided,
+the Hyperions notes and this link I found as the source for the answers below:
+https://www.simplilearn.com/tutorials/mongodb-tutorial/what-is-mongodb). Additional source info from Hyperion Dev notes and openAi.
+
+Question 1
+
+Benefits of using MongoDB:
+1. - Stores information in documents making it easier for humans to read and efficient 
+for computers to process.
+2. - Records aren't restricted to having the same amount of coumns as with relational
+database systems.
+3. - MongoDB has the ability to co-oridnate multiple databases to store data which would 
+otherwise have been a requirement for developers to build into their back-end systems. 
+This allows for many beenfits such as keeping copies on multiple servers ensuring that a 
+single server failure won't break the application, being able to store and scale across
+multiple servers as the application and distribution of the application grows and moving data 
+servers around the globe, closer to end users, allowing for better and quicker and more
+reliable access.
+4. - Flexibility
+MongoDB documents can contain sub-documents making it very flexible. It can also map documents 
+by any porgramming language.
+5. - General Purpose
+MongoDB allows for diversity and multiple-purpose functionality from a single database.
+6. - Flexible Schema Design.
+MongoDB allows for the modification of non-defined attributes in the database with ease,
+which would be impossible to do in relational database.
+7. - Built in security feautures for user-authorizations and authentication.
+8. - Incororates JSON (BSON) which is a widely used format.
+9. - BUilt in mappign tools such as MapReduce.
+10. - NoSQL (not only structured query language) servers are more efficient and 
+more affordable to set up, maintain and scale.
+11. - NoSQL is free and open source making it an affordable option.
+12. - Supports integration cacheing.
+13. - No predefined schema set-up. Users can manipulate data to focus on the 
+application and not the database.
+
+Question 2
+
+In a schema structured database environment, the data is collected and stored in 
+tables all with relationallinks to each column and row for each entity. The data
+antered into these tables need to adhere to the schema set-up as defined by the 
+table. In a schema-less or schema-flexible model, each database exits in a document 
+with it's own structure and they need not adhere to any predefined schema set-up.
+
+2.1 - Benefits of a schemaless structured database. 
+
+1. - Flexibility. It allows users to create and store data without having to conform
+to a predefined data table or schema making it easier to scale and also to impliment
+when the specific data variables and metrics collected may still be unknown. These 
+metrics can be added at a later stage when collated. 
+2. - Agility - Users are easiliy able to update, add or delete data in a schemaless
+database setup making it much easier to use. 
+3. - Scalability. It's easier to scale noSQL databases as they don't need to provide 
+schema consistency across all the databases. 
+
+2.2 - Cons of using schemaless structured database.
+
+1. - Data Integrity. Without a predefined schema, the responsibility of the data structure 
+gets passed to the application which can lead to inonsistencies and errors if not handled correctly. 
+2. - Complex Queries. Schemaless Databases can be less effecient when it comes to querying complex,
+multiple fields with adjoining sets of multiple data types. This can lead to indexing and querying challenges.
+3. - Learning Curve. Developers used to working with structuerd schema data systems may find the learning 
+curve to enable them to using the schemaless system challening.
+4. - Document Validation. It's up the programmers to ensure that all the validation and rules provided
+nativley by mongoDB are properly set-up and maintained. 
+
+Question 3.
+
+I think that a company like Amazon would prefer to use a database system like noSQL mainly because of the 
+massive diversity of the product catalogue. Imagine having to develope a singular schema document that 
+can account for all the possible data entities required for all the products that they sell? It would be 
+practically impossible to do and even if that template could be cteated, it would be so massively bloated for 
+items who required perhaps only 3 or 4 data entries which would now have to be conformed to using a structure 
+with a perhaps a million data columns or more. This was each product can exist in it's own document with it's own 
+set of data metrics without having to conform to the main schema. 
+
+Question 4.
+
+It would be better to use a structure schema in an e-commerce set up where the predefined metrics are known 
+and can be built to match to managed the users details, their orders and the inventory of the store. All these
+data nodes can be structured and linked to form a solid and reliable set-up.
+It can therefore also assist in complex querying scenarios whereby a specific user's data needs to be referenced 
+against his current orders, past orders, returns and their associated costs and delviery variables. This would be 
+easier to use that mongoDB. A typical example of this is the built-in e-commerce application for WordPress, WooCommerce.
