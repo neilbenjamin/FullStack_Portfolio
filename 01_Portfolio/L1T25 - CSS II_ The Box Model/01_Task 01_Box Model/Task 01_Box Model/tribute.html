@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="myStyles.css" />
+    <title>Leo Fender</title>
+  </head>
+  <body>
+    <header id="home">
+      <!-- I used some padding in the css to space this out a little -->
+      <nav id="mainNav">
+        <a href="#headerImage" class="navSpacer">Leo</a>
+        <a href="#leftStrat" class="navSpacer">Strat</a>
+        <a href="#middleTele" class="navSpacer">Tele</a>
+        <a href="#rightBass" class="navSpacer">Bass</a>
+      </nav>
+      <br />
+    </header>
+    <!-- Is this right to use main? I see some of your notes using "section" -->
+    <main>
+      <!-- Image -->
+      <article id="bannerImage">
+        <h1 id="mainHeader">LEO FENDER</h1>
+        <figure>
+          <img
+            id="headerImage"
+            src="Images/LeoFender.png"
+            alt="Leo Fender at work at his desk"
+            height="500"
+          />
+          <figcaption class="figCaptionStyling">
+            Leo Fender at his desk
+          </figcaption>
+        </figure>
+      </article>
+      <!-- Facts List -->
+      <article>
+        <h2 id="aboutLeo">Lesser know facts about the legend</h2>
+        <!-- Paragraph -->
+        <p id="para1">
+          Leo, the inventor of the electric guitar, will fondly be rembered by
+          millionsof guitar players around the world.
+        </p>
+        <!-- Unorganised List -->
+        <ul>
+          <!-- List Items -->
+          <li class="highlight">Leo loved tinkering with electronics</li>
+          <li>
+            He was born in a barn in 1909, and his parents were in agriculture.
+          </li>
+          <li>
+            He didn’t play guitar, but did play saxophone, and dabbled in piano.
+          </li>
+          <li>
+            His uncle is greatly responsible for Leo’s love of electronics
+          </li>
+          <li>
+            A health condition prevented him from being drafted for World War II
+          </li>
+          <li>He was an accounting major</li>
+          <li>He married twice, but had no children</li>
+          <li>He loved cameras and boats</li>
+          <li>He died in 1991 after battling parkinson’s disease.</li>
+          <li class="highlight">
+            Fender is the most recognisable guitar brand in the world
+          </li>
+        </ul>
+        <hr />
+      </article>
+      <div id="mainDiv">
+        <p id="mainP">
+          Clarence Leonidas Fender (August 10, 1909 – March 21, 1991) was an
+          American inventor known for founding the Fender Musical Instruments
+          Corporation and designing the company's early models, the Fender
+          Telecaster, Fender Precision Bass, and Fender Stratocaster.
+        </p>
+        <!-- aside element -->
+        <aside class="asideId">
+          Fender Electric Instrument Manufacturing Company sold thousands and
+          thousands of these instruments. Many rock and pop music bands from the
+          1960s to the 2000s use these electric guitars and electric bass
+          guitars.
+        </aside>
+        <aside class="asideId">
+          All of these instruments (the Telecaster, Stratocaster, Precision
+          Bass, and the Jazz Bass) became popular.
+        </aside>
+        <p id="springGreen">His competitors include Gibson, Gretsch and PRS.</p>
+      </div>
+
+      <!-- Image Gallery -->
+
+      <!-- Alight Left -->
+      <!-- The article container will be stled to centre the contents of the container using the id selector. -->
+      <article id="alignLeft">
+        <h3 id="leftStrat">THE STRATOCASTER</h3>
+        <!-- The image size will be set in css and the sizing will be dynamic to fit the viewport size. -->
+        <img
+          src="Images/RedFenderLeft.jpg"
+          alt="Red and white Fender Stratocaster"
+          id="leftImage"
+        />
+      </article>
+
+      <!-- Alight Centre -->
+      <article id="alignCentre">
+        <h3 id="middleTele">TIMELESS TELECASTER</h3>
+        <img
+          src="Images/BlueTeleMiddle.jpg"
+          alt="Blue Fender Telecaster"
+          id="centreImage"
+        />
+        <a href="#home" class="backToTop">Back To Top</a>
+      </article>
+
+      <!-- Align Right -->
+      <article id="alignRight">
+        <h3 id="rightBass">THE PRECISION BASS</h3>
+        <img
+          src="Images/PBassRight.jpg"
+          alt="Fender Bass Guitar"
+          id="rightImage"
+        />
+        <a href="#home" class="backToTop">Back To Top</a>
+      </article>
+      <article class="firstParagraphr">
+        <h2>The Telecaster</h2>
+        <p>
+          The Fender Telecaster was developed by Leo Fender in Fullerton,
+          California, in 1950. In the period roughly between 1932 and 1949,
+          several craftsmen and companies experimented with solid-body electric
+          guitars, but none had made a significant impact on the market.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; www.guitarcrazy.com 2023 All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

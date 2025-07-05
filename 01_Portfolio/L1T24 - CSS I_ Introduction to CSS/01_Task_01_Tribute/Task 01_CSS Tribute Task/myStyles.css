@@ -1,0 +1,139 @@
+/* Sets the globla background colour */
+body {
+  background-color: rgb(240, 240, 240);
+}
+/* Set Headers to Italics and Typeface */
+h1,
+h2,
+h3,
+h4 {
+  font-size: 4.5vh;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(61, 61, 61);
+}
+
+/* Adjust P dynamically */
+p {
+  font-size: 2vh;
+}
+
+/* Main nav area */
+#mainNav {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Padding for nav elements */
+.navSpacer {
+  padding: 1vw;
+}
+/* Main header centered */
+#mainHeader {
+  display: flex;
+  justify-content: center;
+}
+
+/* IMAGE CONTAINER */
+/* container keeping the contents centered. */
+#bannerImage {
+  /* Using flex to wrap content to fit screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Scale dynamically */
+#headerImage {
+  max-width: 100%;
+  height: auto;
+}
+/* Adjust first paragraph */
+#firstParagraph{
+  text-align: center;
+  font-size: large;
+}
+
+/* LIST CONTAINER */
+#aboutLeo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+/* Scale dynamically */
+#asideId p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ALIGN LEFT */
+#alignLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid black;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  margin: 5%;
+}
+
+/* Scale dynamically */
+#leftImage {
+  max-width: 30%;
+  height: auto;
+  margin-right: auto;
+}
+
+/* ALIGN MIDDLE */
+#alignCentre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  margin: 5%;
+}
+
+/* Scale dynamically */
+#centreImage {
+  max-width: 30%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#middleTele {
+  text-align: center;
+}
+
+/* ALIGN RIGHT */
+#alignRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid black;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  margin: 5%;
+}
+
+/* Scale dynamically */
+#rightImage {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Back to top */
+.backToTop {
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin-top: 1%;
+}

@@ -1,0 +1,211 @@
+/* Sets the global background colour */
+body {
+  background-color: rgb(240, 240, 240);
+}
+/* TASK 25 */
+/* Set H1 Tags to padding */
+h1 {
+  /* Set Padding */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* Change H1 font color */
+  color: brown;
+}
+
+/* Change UL */
+.highlight {
+  background-color: cadetblue;
+}
+
+/* figCaption Styling */
+.figCaptionStyling {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Rounded Corners */
+#mainDiv {
+  border: solid 5px rgb(165, 165, 165);
+  border-radius: 5px;
+}
+#mainDiv {
+  padding: 2%;
+  background-color: darkgray;
+  color: whitesmoke;
+}
+#mainP {
+  font-size: 18px;
+}
+.asideId {
+  text-indent: 20px;
+}
+
+/* Set Headers to Italics and Typeface */
+h2,
+h4 {
+  font-size: 4.5vh;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(61, 61, 61);
+}
+
+h3 {
+  font-size: 2.5vh;
+  width: 25%;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(61, 61, 61);
+}
+
+/* Adjust P dynamically */
+p {
+  font-size: 2vh;
+}
+
+/* Main nav area */
+#mainNav {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Padding for nav elements */
+.navSpacer {
+  padding: 1vw;
+}
+/* Main header centered */
+#mainHeader {
+  display: flex;
+  justify-content: center;
+}
+
+/* IMAGE CONTAINER */
+/* container keeping the contents centered. */
+#bannerImage {
+  /* Using flex to wrap content to fit screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Set blue border in images */
+  border: 5px solid blue;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Scale dynamically */
+#headerImage {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust first paragraph */
+#para1 {
+  text-align: center;
+  font-size: large;
+  color: navy;
+}
+
+/* SpringGreenBorder */
+#springGreen {
+  border-top: 5px solid springgreen;
+  border-bottom: 5px solid springgreen;
+  border-left: 5px dotted springgreen;
+  border-right: 5px double springgreen;
+  text-align: center;
+  font-size: 16px;
+  padding: 2%;
+}
+
+/* LIST CONTAINER */
+#aboutLeo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+/* Scale dynamically */
+#asideId p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ALIGN LEFT */
+#alignLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 5px solid blue;
+  border-radius: 5px;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  margin: 5%;
+}
+
+/* Scale dynamically */
+#leftImage {
+  max-width: 30%;
+  height: auto;
+  margin-right: auto;
+}
+
+/* ALIGN MIDDLE */
+#alignCentre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid blue;
+  border-radius: 5px;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  margin: 5%;
+}
+
+/* Scale dynamically */
+#centreImage {
+  max-width: 30%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#middleTele {
+  text-align: center;
+}
+
+/* ALIGN RIGHT */
+#alignRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 5px solid blue;
+  border-radius: 5px;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  margin: 5%;
+}
+
+/* Scale dynamically */
+#rightImage {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Back to top */
+.backToTop {
+  font-size: medium;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  margin-top: 1%;
+}
+
+.theTelecaster {
+  font-size: 25px;
+  line-height: 20px;
+  color: plum;
+  font-family: monospace;
+  padding: 4px;
+  margin-left: 6px;
+}
