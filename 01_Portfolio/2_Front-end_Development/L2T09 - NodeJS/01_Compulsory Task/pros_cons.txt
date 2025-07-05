@@ -1,0 +1,36 @@
+1. Differences between using CommonJS & ES6.
+
+The primary difference between these 2 import systems is that CommonJS is primarily used for node module imports whereas the ES6 system is 
+used for browser imports, hence the syntax having to change slightly when in difference run-time environments. CommonJS primarily also designed for 
+server-side rendering and ES6 for front-end browser environments. The main difference is how the file structures ares different. With common JS, all the 
+file dependencies are stored in one file -  node_modules/ whereas with ES6 the decencies are stored within their own files. (Last sentence courtesy of knowledge-hut).
+
+2. ES6 Modules:
+
+Pros:
+
+1 - Standardized Syntax: ES6 modules provide a standardized and cleaner syntax for importing and exporting code, making it easier to understand and maintain your codebase.
+2 - Tree Shaking: ES6 modules support tree shaking, which means that bundlers (like webpack) can eliminate unused code during the build process, resulting in smaller bundle sizes and better performance.
+3 - Asynchronous Loading: ES6 modules are designed to be loaded asynchronously in browsers, which can lead to improved webpage load times and a more responsive user experience.
+
+Cons:
+
+1 - Limited Compatibility: ES6 modules are not natively supported in all environments, especially older browsers and some server-side environments, requiring additional tooling and transpilation.
+2 - Complex Cyclic Dependencies: Managing cyclic dependencies in ES6 modules can be challenging due to their asynchronous loading nature, potentially leading to runtime errors.
+3 - Migrating Legacy Code: Transitioning an existing codebase to ES6 modules can be time-consuming and require updates to the import/export syntax and build tool configurations.
+
+CommonJS Modules:
+
+3. Pros:
+
+1 - Wide Compatibility: CommonJS modules have widespread support in environments like Node.js, making them suitable for server-side applications and various command-line tools.
+2 - Dynamic Imports: CommonJS allows for dynamic imports, enabling you to load modules conditionally at runtime, which can be useful for complex application logic.
+3 - Synchronous Loading: CommonJS modules are loaded synchronously, making it easier to manage cyclic dependencies and ensuring predictable order of execution.
+
+Cons:
+
+1 - Non-Standard Syntax: The syntax for CommonJS modules is not a part of the ECMAScript specification, so it's not as standardized as ES6 modules, which could lead to inconsistencies.
+2 - Lack of Tree Shaking: CommonJS modules do not support tree shaking, potentially resulting in larger bundle sizes as unused code cannot be easily eliminated.
+3 - Less Suitable for Browsers: The synchronous nature of CommonJS modules can lead to performance bottlenecks in browser environments, where asynchronous loading is often preferred.
+
+Pro's and Con's resources Courtesy of OpenAI.

@@ -1,0 +1,38 @@
+Center the content horizontally and vertically
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Style the container */
+.container {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+/* Style the button */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+/* Display LI */
+.weather-list-items {
+    margin-top: 2%;
+    text-align: left;
+}
+/* //Text Color */
+.text-color {
+    color: white;
+}

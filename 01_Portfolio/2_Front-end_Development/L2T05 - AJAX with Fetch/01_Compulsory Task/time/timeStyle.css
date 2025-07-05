@@ -1,0 +1,17 @@
+/* Position clock center on both y & x axis. */
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container-md {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clock {
+  font-size: 5rem;
+}

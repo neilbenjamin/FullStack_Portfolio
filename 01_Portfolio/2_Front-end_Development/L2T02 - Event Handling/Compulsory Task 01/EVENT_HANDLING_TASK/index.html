@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+
+    <!-- Link Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- External CSS link-->
+    <!-- I commented this css link out to stop the error message.  -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Shopping List</h2>
+
+        <!-- Input Form -->
+        <div class="header">
+            <input type="text" id="input" onchange="updateList()" placeholder="Insert an item">
+            <button onclick="updateList()" id="addBtn">Add Item</button>
+        </div>
+
+        <!-- Shopping LIst -->
+        <ul id="itemList"></ul>
+        <!-- Display Ticked off items -->
+        <div id="clickedItemsDisplay"></div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

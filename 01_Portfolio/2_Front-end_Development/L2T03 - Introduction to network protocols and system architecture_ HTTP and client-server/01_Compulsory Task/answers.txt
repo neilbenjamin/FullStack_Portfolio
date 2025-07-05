@@ -1,0 +1,17 @@
+1. Protocol, in general, refers to a set of rules or procedures that have been agreed to that run or operate systems, societies, governments 
+and other elements, such as the internet. In computer terms, and in my own words, I understand the word protocol to refer to the guidelines, rules
+and conventions that have been defined to allow data to be effectively transmitted across a myriad of devices between a web clients and web servers. In HTTP, 
+it refers to the Hypertext Transfer Protocol. 
+2. Hypertext Transfer Protocol is built ontop of the Transmission Control Protocol/Internet Protocol system, (TCP/IP) which is the underlying foundation of 
+networkign protocols that link and operate the internet and most computer networks. In short summary the TCP is responsible for breaking down the data to be 
+transmitted into smaller packages and then reassembling them at a later stage in the correct order. The IP will determine where the data is sent using unique 
+addresses to ensure that data is sent to the correct destination. 
+3. A successful response from a server will have teh 200 Status code.
+4. CRUD operation equivalents for HTTP methods are as follows: 
+4.1. C-CREATE - HTTP Method (POST) - CReate a new resourse on a server.
+4.2. R-READ - HTTP Method (GET) - Retrieve data from a server. 
+4.3. U-UPDATE - HTTP Method (PUT or PATCH) - Update or replace an existing resource on the server. P-ATCH can also be used to update parts of teh resource that need to be updated instead of
+     replacing the entire resource.
+4.4. D-DELETE - HTTP Method (Delete) - Delete the resource from the server. 
+6. b, c & f.
+7. 403 Forbidden.
